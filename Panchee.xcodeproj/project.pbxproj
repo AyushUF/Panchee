@@ -12,6 +12,7 @@
 		5E662D7A1E5BC1D5004F21D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E662D781E5BC1D5004F21D9 /* Main.storyboard */; };
 		5E662D7C1E5BC1D5004F21D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E662D7B1E5BC1D5004F21D9 /* Assets.xcassets */; };
 		5E662D7F1E5BC1D5004F21D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E662D7D1E5BC1D5004F21D9 /* LaunchScreen.storyboard */; };
+		8BFD6BC288D05688A842BBC1 /* Pods_Panchee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A67D8E76FAC302B56DD644 /* Pods_Panchee.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		5E662D7B1E5BC1D5004F21D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E662D7E1E5BC1D5004F21D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E662D801E5BC1D6004F21D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A25CE9E3DA81A8A9F6606C12 /* Pods-Panchee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panchee.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panchee/Pods-Panchee.release.xcconfig"; sourceTree = "<group>"; };
+		A9A67D8E76FAC302B56DD644 /* Pods_Panchee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panchee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB74B4DE1AFC0A9C5CCE54F /* Pods-Panchee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panchee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panchee/Pods-Panchee.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BFD6BC288D05688A842BBC1 /* Pods_Panchee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				5E662D731E5BC1D5004F21D9 /* Panchee */,
 				5E662D721E5BC1D5004F21D9 /* Products */,
+				76D99D7D841C4B910BE0080A /* Pods */,
+				81BBE4BFA735365070AFE781 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = Panchee;
 			sourceTree = "<group>";
 		};
+		76D99D7D841C4B910BE0080A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAB74B4DE1AFC0A9C5CCE54F /* Pods-Panchee.debug.xcconfig */,
+				A25CE9E3DA81A8A9F6606C12 /* Pods-Panchee.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		81BBE4BFA735365070AFE781 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9A67D8E76FAC302B56DD644 /* Pods_Panchee.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E662D831E5BC1D6004F21D9 /* Build configuration list for PBXNativeTarget "Panchee" */;
 			buildPhases = (
+				343B96D4799FEC7B531ACD15 /* [CP] Check Pods Manifest.lock */,
 				5E662D6D1E5BC1D5004F21D9 /* Sources */,
 				5E662D6E1E5BC1D5004F21D9 /* Frameworks */,
 				5E662D6F1E5BC1D5004F21D9 /* Resources */,
+				2E9522EF25206306483DC455 /* [CP] Embed Pods Frameworks */,
+				FFA8F9EC18FB316C93A04DD4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E9522EF25206306483DC455 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panchee/Pods-Panchee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		343B96D4799FEC7B531ACD15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFA8F9EC18FB316C93A04DD4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panchee/Pods-Panchee-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5E662D6D1E5BC1D5004F21D9 /* Sources */ = {
@@ -256,6 +331,7 @@
 		};
 		5E662D841E5BC1D6004F21D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAB74B4DE1AFC0A9C5CCE54F /* Pods-Panchee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Panchee/Info.plist;
@@ -268,6 +344,7 @@
 		};
 		5E662D851E5BC1D6004F21D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A25CE9E3DA81A8A9F6606C12 /* Pods-Panchee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Panchee/Info.plist;
